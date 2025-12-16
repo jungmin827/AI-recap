@@ -1,41 +1,38 @@
-# [Project] AI-Wrapped: My 2025 AI Persona Report
-> **Project Code:** AI-DNA
-> **Version:** 1.0.0
-> **Target:** SNS Viral Service (Spotify Wrapped Style)
+# [Project] AI-Curiosity: My 2025 AI Interest Profile
+> **Project Code:** AI-DNA-Interest
+> **Version:** 2.0.0 (Refined: Focus on Interests & Taste)
+> **Target:** SNS Viral Service (Spotify Wrapped for Intellectual Curiosity)
 
 ---
 
 ## 1. 서비스 개요 (Service Overview)
 
 ### 1.1 기획 의도
-사용자가 1년간 AI(ChatGPT, Gemini)와 나눈 대화 기록을 분석하여, **"AI가 바라보는 나의 본성"**을 재치 있게 알려주는 웹 서비스입니다.
-단순한 통계 나열이 아니라, **사용자의 숨겨진 욕망, 성격 유형(New MBTI), 2026년 예측**을 블랙 유머 코드(Sarcasm & Wit)로 풀어내어 자발적인 SNS 바이럴을 유도합니다.
+"내가 지난 1년 동안 AI와 무슨 대화를 가장 많이 했을까?"
+사용자의 채팅 기록을 통해 **숨겨진 관심사(Hidden Interests)**와 **지적 취향(Intellectual Taste)**을 분석해 주는 서비스입니다.
+자극적인 '욕망' 분석보다는, **개인의 탐구 생활과 취향**을 세련되게 시각화하여 "나는 이런 것에 관심 있는 사람이야"라는 **자기표현(Self-Expression)의 수단**으로 SNS에 공유하게 만듭니다.
 
 ### 1.2 핵심 가치 (Core Value)
-1.  **Fun & Insight:** 스포티파이 Wrapped의 '음악 나이'처럼, 나의 'AI 정신 연령'과 '숨겨진 욕망'을 발견하는 재미.
-2.  **Zero Privacy Risk:** 민감한 대화 내용을 서버로 전송하지 않고, **브라우저에서 처리(Local Processing)**하여 보안 우려를 원천 차단.
-3.  **Super Easy UX:** 압축 파일(ZIP)을 풀지 않고 그대로 드래그 앤 드롭하는 **"3초 컷"** 진입 장벽.
+1.  **Define Your Taste:** 내가 몰랐던 나의 '관심사 DNA'를 발견 (예: "너 사실 역사 덕후였어").
+2.  **Intellectual Vibe:** 나의 질문 수준과 분야를 분석해 'AI 대화 나이'나 '지적 성향'을 매력적으로 포장.
+3.  **Safe & Fast:** 서버 전송 없이 브라우저에서 100% 처리하여 프라이버시 걱정 없는 쾌속 분석.
 
 ---
 
 ## 2. 사용자 경험 (UX Workflow)
 
-### Step 1. 랜딩 페이지 (Hook)
-* **메인 카피:** "AI는 네가 지난 여름에 검색한 것을 알고 있다."
-* **기능:** '데모 결과 보기' 버튼을 통해 흥미 유발.
-* **CTA:** [내 데이터로 분석하기]
 
-### Step 2. 데이터 추출 가이드 (Education)
-* **구성:** 텍스트 설명 대신 **3초 반복 움짤(GIF)** 사용.
+### Step 1. 데이터 추출 가이드 (Education)
+* **구성:** 텍스트 설명 사용.
 * **내용:** ChatGPT 설정 -> Data Export -> 이메일 확인 -> 다운로드.
 
-### Step 3. 파일 업로드 (Action)
+### Step 2. 파일 업로드 (Action)
 * **방식:** 이메일로 받은 **`package.zip` 파일을 압축 해제 없이 그대로 드래그 & 드롭.**
 * **UX 장치:**
     * 진행률 표시줄 (Progress Bar).
     * **보안 문구 강조:** "🔒 당신의 데이터는 이 브라우저를 떠나지 않고 0.1초 만에 휘발됩니다."
 
-### Step 4. 결과 리포트 (Reward)
+### Step 3. 결과 리포트 (Reward)
 * **형태:** 모바일 세로형(9:16) 이미지 카드 (인스타 스토리 공유 최적화).
 * **주요 콘텐츠:**
     1.  **My AI Persona (4글자 코드):** 새로운 MBTI 유형.
@@ -57,11 +54,13 @@
 | **분야 (Focus)** | **E (Emotion/문과)** | **L (Logic/이과)** | 감성/인문학 키워드 vs 코딩/수학/데이터 키워드 |
 | **세대 (Vibe)** | **Y (Young/MZ)** | **O (Old/Teul)** | 밈/신조어 사용 vs 건강/부동산/옛날 말투 |
 
-### 3.2 욕망 키워드 (Desire Keywords for Recap)
-리포트의 '재미'를 담당하는 특수 카테고리입니다.
-* **한탕주의:** 코인, 로또, 주식, 떡상
-* **다이어트:** 칼로리, 제로, 헬스 (질문만 하고 실천 안 함)
-* **날로 먹기:** 요약해, 써줘, 레포트, 과제
+### 3.2 Interest Tag Cloud (관심사 추출 로직)
+'욕망'이 아닌 **'순수 관심사'**를 카테고리별로 카운팅하여 **최다 빈도 관심사**를 찾아냅니다.
+
+* **💻 Tech & Dev:** 코딩, 에러, AI, 데이터, 엑셀, 장비
+* **🎨 Culture & Art:** 영화, 드라마, 웹툰, 음악, 글쓰기, 디자인
+* **✈️ Life & Hobby:** 여행, 맛집, 요리, 운동, 패션, 인테리어
+* **📚 Study & Knowledge:** 역사, 철학, 과학, 어학, 시사
 
 ---
 
@@ -91,19 +90,53 @@
 ```javascript
 export const PATTERNS = {
   // 1. 태도 (Attitude)
-  warm: /고마워|감사|사랑|덕분에|천재|똑똑|thanks|thx/gi,
-  cold: /요약|번역|수정|내놔|빨리|다시|틀렸어|summary|translate/gi,
+  warm: /고마워|대박이다|해줄래|덕분에|줄수있어?|부탁해|thanks|thx/gi,
+  cold: /만들어봐|바꿔봐|뒤질래|내놔|빨리|그거말고|장난해|해봐|translate/gi,
 
-  // 2. 관심 (Interest)
-  tech: /error|bug|deploy|api|sql|docker|python|java|react|함수|변수|배포|```/gi,
-  art: /소설|시나리오|제목|마케팅|카피|블로그|essay|writing|철학|심리/gi,
+// 2. Interest Categories (관심사 파악용 - 여기가 핵심)
+  // [Tech]
+  dev: /error|bug|deploy|api|sql|python|java|react|vue|node|함수|변수|배포|코드|알고리즘/gi,
+  tool: /엑셀|ppt|매크로|단축키|notion|slack|장비|맥북|모니터/gi,
+
+  // [Culture]
+  content: /넷플릭스|영화|드라마|애니|웹툰|줄거리|결말|추천|리뷰|캐릭터|시즌/gi,
+  creation: /글쓰기|제목|소설|시나리오|블로그|유튜브|편집|디자인|포토샵|카피/gi,
+
+  // [Life]
+  food: /맛집|레시피|요리|메뉴|식당|고기|카페|음식|재료/gi,
+  travel: /여행|숙소|비행기|코스|예약|환율|날씨|지도|관광/gi,
+  health: /운동|헬스|요가|영양제|증상|효능|다이어트|근육/gi,
+
+  // [Knowledge]
+  humanities: /역사|철학|심리|의미|유래|영어|번역|뜻|어원/gi,
+  science: /수학|과학|물리|우주|이론|공식|증명|원리/gi
 
   // 3. 세대 (Vibe)
   mz: /ㅋㅋ|ㅎㅎ|존맛|꿀팁|가성비|드립|mbti|넷플릭스|알빠/gi,
   old: /효능|부작용|부동산|청약|주식|운세|꿈해몽|읍니다|하오/gi,
 
-  // 4. 욕망 (Desire - Special)
-  money: /로또|비트코인|코인|떡상|주가|대박/gi,
-  diet: /칼로리|다이어트|살|식단|운동|헬스/gi,
-  lazy: /요약|대신|써줘|report|숙제/gi
+
 };
+
+
+---
+
+Phase 1 (Data Parsing):
+
+conversations.json 파싱 로직 구현.
+
+위 INTEREST_PATTERNS를 활용한 카테고리별 카운팅 기능 개발.
+
+검증: 개발자 본인의 데이터로 테스트하여 관심사 비율이 맞게 나오는지 확인.
+
+Phase 2 (Report Logic):
+
+4축(Attitude, Depth, Domain, Vibe) 점수 산출 알고리즘 확정.
+
+AI API 연동하여 리포트 문구 생성 테스트.
+
+Phase 3 (UI/UX):
+
+데이터 드래그 & 드롭 UI 구현.
+
+결과 카드 디자인 (공유하고 싶게 만드는 타이포그래피 & 컬러).

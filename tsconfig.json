@@ -1,0 +1,14 @@
+{
+  "extends": "./packages/types/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@core/*": ["packages/core/src/*"],
+      "@types/*": ["packages/types/src/*"],
+      "@ui/*": ["packages/ui/src/*"]
+    },
+    "composite": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
+
